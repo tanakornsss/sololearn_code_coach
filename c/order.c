@@ -29,10 +29,11 @@
 
 int main()
 {
-	int count = 0;
 	const int max_words = 4;
-	char input[32];
-	char output_buff[4][32];
+	const char input[32];
+	const char output_buff[4][32];
+
+	int count = 0;
 	char* token;
 	
 	// To compare with.
@@ -52,8 +53,12 @@ int main()
 
 	while (token != NULL && count < max_words)
 	{
+		// Copy string from token -> output_buff[count]
 		strcpy(output_buff[count], token);
+
 		count++;
+
+		// End copying strings.
 		token = strtok(NULL, " ");
 	}
 
