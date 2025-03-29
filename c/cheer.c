@@ -27,7 +27,26 @@
 
 int main()
 {
-	
+	int yards = 0;
+	scanf("%d", &yards);
+
+	if (yards <= 10 && yards >= 1) 
+	{
+		for (int i = 0; i < yards; i++)
+	       	{
+			printf("Ra!");
+		}
+	}
+	else if (yards > 10)
+	{
+		printf("High Five");
+	}
+	else
+       	{
+		printf("shh");	
+	}
+
+
 	return 0;
 }
 
