@@ -25,5 +25,17 @@
 
 int main()
 {
+	const double canvas_cost = 40.00;
+	const double paint_cost = 5.00;
+	const double tax_percent = 0.1;
+
+	int paints;
+	scanf("%d", &paints);
+
+	double total_no_tax = canvas_cost + (paint_cost * paints);
+	double total = total_no_tax * (1.0 + tax_percent);
+
+	printf("%.0f", total);
+
 	return 0;
 }
