@@ -96,10 +96,9 @@ int main()
 		printf("Apartment A");
 	}
 	else
-       	{
+ {
 		printf("Apartment B");	
 	}
-
 
 	return 0;
 }
